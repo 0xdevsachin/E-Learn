@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>E-Learn Platform</title>
+    <link rel="icon" href="../static/img/dragon.ico" type="image/ico" sizes="16x16">
+    <script src="https://kit.fontawesome.com/ba8127bac3.js" crossorigin="anonymous"></script>
+    <script src="../static/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cosmogicofficial/quantumalert@latest/minfile/quantumalert.js" charset="utf-8"></script>
+</head>
+
+
+<body>
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../static/img/dragon.ico" alt="" width="35" height="34">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-center m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link licolors" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link licolors" href="/#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link licolors" href="/#price">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link licolors" href="/login">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="formbox">
+        <div class="box">
+            <div class="btns">
+                <button type="button" id="lbtn" onclick="login()">Log in</button>
+                <button type="button" id="rbtn" onclick="signup()">Sign up</button>
+                <ul class="social">
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                    <li><a href="#"><i class="fab fa-apple"></i></a></li>
+                </ul>
+            </div>
+            <div id="login" class="inputs">
+                <form action="/login" method="POST">
+                    <input class="input-field" type="text" name="user" required placeholder="Username"></i>
+                    <input class="input-field" type="password" name="password" required placeholder="Password">
+                    <button type="submit" class="loginbtn addbtn">Sign in</button>
+                </form>
+            </div>
+            <div id="register" class="inputs">
+                <form action="/register" method="POST">
+                    <input class="input-field" name="user" type="text" required placeholder="Username">
+                    <input class="input-field" name="email" type="email" required placeholder="Email ID">
+                    <input class="input-field" name="pass" type="password" required placeholder="Password">
+                    <input class="input-field" name="cpass" type="text" required placeholder="Confirm password">
+                    <ul>
+                        <li><input class="" type="radio" required name="gender" value="Male">Male</li>
+                        <li><input type="radio" name="gender" required value="Female">Female</li>
+                    </ul>
+                    <button type="submit" class="loginbtn addbtn">Sign Up</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="price" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h5>Made with 💖</h5>
+        <ul class="social">
+            <li><a href="https://github.com/sachin320"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://instagram.com/0xsachin"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://linkedin.com/in/0xsachin"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+    <div class="footercontainer ">
+        <div class="footer">
+            <ul>
+                <li> <img src="../static/img/dragon.ico" alt="logo" height="60px" width="60px">
+                </li>
+                <li>
+                    <h2 style="color: aliceblue;">E-Learn</h2>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <ul>
+                <li>
+                    <p style="color: white;">Copyright &#169 E-Learn. All Right Reserved</p>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <ul class="social">
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script>
+    var f = document.getElementById('lbtn')
+    f.setAttribute('style', 'background-color: rgb(39, 39, 209);')
+    
+    {{main.message}}();
+</script>
+
+
+</html>

@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(24, 23, 23);
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgb(26, 24, 24);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #242222;
+}
+
+body {
+    background-color: #0e0d0d;
+}
+
+.navbar-nav li a {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.licolors {
+    color: white !important;
+}
+
+@media screen and (min-width: 1100px) {
+    .navbar-brand {
+        margin-left: 20px;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.addbtn {
+    box-shadow: 10px 10px 3px #0e0d0d;
+    border: none;
+    height: 3rem;
+    width: 200px;
+    border-radius: 13px;
+    transition: all 0.3s ease-out;
+    background-color: rgb(39, 39, 209);
+    color: #e5e5e5;
+    font-weight: 600;
+}
+
+.addbtn:active {
+    transform: translate(10px, 10px);
+}
+
+.footercontainer {
+    background-color: #000000;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footercontainer .footer {
+    margin: 20px auto 0 auto;
+}
+
+.footer ul li {
+    padding: 10px;
+    list-style: none;
+    display: inline-block;
+}
+
+@media (max-width:1260px) {
+    .footercontainer {
+        flex-direction: column;
+    }
+}
+
+
+/* Carousel base class */
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+    height: 38rem;
+    background-color: #777;
+}
+
+.carousel-item>img {
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 38rem;
+    object-position: center;
+    object-fit: cover;
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h1 {
+    color: aliceblue;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.marketing h2 {
+    font-weight: 400;
+    color: aliceblue;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.marketing p {
+    color: aliceblue;
+}
+
+.pricing-header {
+    max-width: 700px;
+}
+
+.teamcard {
+    border-radius: 10px;
+    box-shadow: 18px 18px 0px rgb(8, 8, 8);
+    padding: 18px 9px;
+    width: 330px;
+    margin: 0 auto;
+    background-color: rgb(29, 27, 27);
+}
+
+.teamcard .p {
+    text-align: left;
+}
+
+.card {
+    display: inline-block;
+}
+
+.card-deck .card {
+    min-width: 350px;
+    margin: 0 30px;
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.pricecontainer {
+    margin: 0 auto;
+}
+
+.pricecontainer h4 {
+    color: #e5e5e5;
+}
+
+.pricecontainer .card {
+    background-color: rgb(29, 27, 27);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 18px 18px 0 black;
+}
+
+.card-body ul li {
+    color: #e5e5e5;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+.socialcontainer {
+    margin: 0 30px 0 0;
+    padding: 0 30px;
+}
+
+.social li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    margin: auto;
+}
+
+.social li a {
+    font-size: 40px;
+    color: rgb(199, 206, 226);
+}
+
+.social li:hover {
+    animation: bounce 0.6s ease-in-out;
+}
+
+@keyframes bounce {
+    0% {}
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {}
+}
+
+
+/*   Course Page CSS    */
+
+.coursecontainer {
+    padding: 10px auto;
+}
+
+.coursecontainer img {
+    opacity: 0.7;
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.videoplayer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border: solid 2px black;
+    height: 60vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+.videoplayer .item {
+    background-color: #e5e5e5;
+    height: 60vh;
+    width: 99vw;
+}
+
+.notesarea {
+    margin-top: 30px;
+    display: flex;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px 20px;
+    color: #e5e5e5;
+}
+
+.help ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px 20px;
+}
+
+.help button {
+    box-shadow: 10px 10px 2px #000000;
+}
+
+#price {
+    color: white;
+}
+
+.formbox {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    position: relative;
+    height: 70vh;
+}
+
+.btns {
+    margin: 30px auto;
+    position: relative;
+    border-radius: 30px;
+}
+
+.btns button {
+    position: relative;
+    border: none;
+    outline: none;
+    background: none;
+    margin: 0 auto;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px 30px;
+    color: #e5e5e5;
+    transition: 0.5s;
+}
+
+.btns .social {
+    margin-top: 30px;
+}
+
+.inputs {
+    top: 220px;
+    position: absolute;
+    width: 260px;
+    color: #e5e5e5;
+}
+
+.input-field {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    height: 40px;
+    font-size: 30px;
+    color: #e5e5e5;
+    background: none;
+    border-bottom: #b4abab 3px solid;
+}
+
+.loginbtn {
+    width: 100%;
+    margin: 60px auto;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+}
+
+#register {
+    display: none;
+    transition: all 0.5s;
+}
+
+#register ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 30px 0 0 0;
+    padding: 0 20px;
+}
