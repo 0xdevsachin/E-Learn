@@ -56,7 +56,10 @@ app.post('/login', async(req, res) => {
     var pass = req.body.password
     var userid = await modules.findOne({ user: email })
     if (userid) {
-        if (bcrypt.compare(pass, userid.pass)) {
+        var new_pass = await bcrypt.compare(pass, userid.pass)
+        console.log(new_pass)
+        if (new_pass) {
+            console.log(bcrypt.compare(pass, userid.pass))
             var tokenx = await userid.auth();
             res.cookie('elearn', tokenx);
             res.render('dashboard', {
