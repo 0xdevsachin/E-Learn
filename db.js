@@ -1,5 +1,6 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/elearn', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(`mongodb+srv://mongogang:${process.env.DB_KEY}@cluster0.q6fsn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true });
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const Register = mongoose.Schema({
