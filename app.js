@@ -64,12 +64,16 @@ app.post('/login', async(req, res) => {
                     name: email
                 }
             })
-        } else {
-            res.send('Check your Credentials')
+        } else res.render('login', {
+            main: {
+                message: 'creds'
+            }
+        })
+    } else res.render('login', {
+        main: {
+            message: 'creds'
         }
-    } else {
-        res.send('Check your Credentials')
-    }
+    })
 })
 
 app.post('/register', async(req, res) => {

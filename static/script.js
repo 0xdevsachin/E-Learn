@@ -42,3 +42,7 @@ function comparepass() {
 function server() {
     Qual.errord("Oh no !", "Something wrong happened");
 }
+
+function creds() {
+    Qual.errord("Oh no !", "Check Your Credentials");
+}
