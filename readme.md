@@ -15,7 +15,7 @@ E-Learn is a Demo Online Teaching Platform In this Project i worked on both fron
   <img src="https://raw.githubusercontent.com/sachin320/logo/main/img/handle.png" width="120" height='130' />
 </p>
 
-## Technologies/Frameworks i used for <br>
+## Technologies/Frameworks i used for Back-end <br>
 * Nodejs, MongoDb{ Registration and Login }
 <p align='center' float="left">
    <img src="https://raw.githubusercontent.com/sachin320/logo/main/img/node.png" width="240" height='130' /> 
