@@ -1,5 +1,5 @@
 const jwttokens = require('jsonwebtoken')
-const regster = require('../elearn/db')
+const regster = require('./db')
 
 // Verification of JWT Token for Authentication
 const auth = async(req, res, next) => {
