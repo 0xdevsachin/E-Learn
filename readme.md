@@ -25,7 +25,7 @@ E-Learn is a Demo Online Teaching Platform In this Project i worked on both fron
 
 # Features
 * JWT Token for Authentication and Authorization of user 
-* Used BcryptJs for Storing Passwords in Database
+* Used BcryptJs for Storing Passwords in DB
 
 ## Live Link of Project 
 
